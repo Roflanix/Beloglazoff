@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using System.Linq;
 using Beloglazoff.Models;
+using Beloglazoff.Logic;
 
 namespace Beloglazoff
 {
@@ -64,7 +65,7 @@ namespace Beloglazoff
                 if ((string)ViewState[AntiXsrfTokenKey] != _antiXsrfTokenValue
                     || (string)ViewState[AntiXsrfUserNameKey] != (Context.User.Identity.Name ?? String.Empty))
                 {
-                    throw new InvalidOperationException("Ошибка проверки маркера защиты от XSRF.");
+                    throw new InvalidOperationException("Ошибка проверки маркера Anti-XSRF.");
                 }
             }
         }
@@ -73,14 +74,20 @@ namespace Beloglazoff
         {
 
         }
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+            {
+                string cartStr = string.Format("Cart ({0})", usersShoppingCart.GetCount());
+                cartCount.InnerText = cartStr;
+            }
+        }
         public IQueryable<Category> GetCategories()
         {
             var _db = new Beloglazoff.Models.ProductContext();
             IQueryable<Category> query = _db.Categories;
             return query;
         }
-
-
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);

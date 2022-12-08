@@ -1,4 +1,6 @@
-﻿<%@ Page Title="LegoПродукты" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="Beloglazoff.ProductList" %>
+﻿<%@ Page Title="LegoПродукты" Language="C#" MasterPageFile="~/Site.Master" 
+AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" 
+Inherits="Beloglazoff.ProductList" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <section>
         <div>
@@ -30,24 +32,28 @@
                             <tr>
                                 <td>
                                     <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
-                                     <img src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>"
-                                        width="100" height="75" style="border: solid" /></a>
+                                        <img src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>"
+                                            width="100" height="75" style="border: solid" /></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                     <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
-                                         <span class="ProductName">      
-<<!--Внесено изменение в код, добавлен class="ProductName"-->
+                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
+                                        <span class="ProductName">
                                             <%#:Item.ProductName%>
                                         </span>
                                     </a>
                                     <br />
                                     <span>
-                                         <b>Price: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
+                                        <b>Price: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
                                     </span>
                                     <br />
-                                </td>
+                                    <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">               
+                                        <span class="ProductListItem">
+                                            <b>Добавить в корзину <b>
+                                        </span>           
+                                    </a>
+                                    </td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
@@ -61,7 +67,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                 <table id="groupPlaceholderContainer" runat="server" style="width:100%">
+                                    <table id="groupPlaceholderContainer" runat="server" 
+style="width:100%">
                                         <tr id="groupPlaceholder"></tr>
                                     </table>
                                 </td>

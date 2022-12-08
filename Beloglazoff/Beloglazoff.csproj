@@ -167,8 +167,9 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Catalog\Busdouble.png.png" />
-    <Content Include="Catalog\Busgreen.png.png" />
+    <Content Include="AddToCart.aspx" />
+    <Content Include="Catalog\Busdouble.png" />
+    <Content Include="Catalog\Busgreen.png" />
     <Content Include="Catalog\busred.png.png" />
     <Content Include="Catalog\ImagePath=boatbig.png.png" />
     <Content Include="Catalog\ImagePath=boatpaper.png.png" />
@@ -182,12 +183,12 @@
     <Content Include="Catalog\ImagePath=planeglider.png.png" />
     <Content Include="Catalog\ImagePath=planepaper.png.png" />
     <Content Include="Catalog\ImagePath=planeprop.png.png" />
-    <Content Include="Catalog\ImagePath=rocket.png.png" />
+    <Content Include="Catalog\rocket.png" />
     <Content Include="Catalog\ImagePath=truckbig.png.png" />
     <Content Include="Catalog\ImagePath=truckearly.png.png" />
     <Content Include="Catalog\ImagePath=truckfire.png.png" />
-    <Content Include="Catalog\Thumbs\Busdouble.png.png" />
-    <Content Include="Catalog\Thumbs\Busgreen.png.png" />
+    <Content Include="Catalog\Thumbs\Busdouble.png" />
+    <Content Include="Catalog\Thumbs\Busgreen.png" />
     <Content Include="Catalog\Thumbs\busred.png.png" />
     <Content Include="Catalog\Thumbs\ImagePath=boatbig.png.png" />
     <Content Include="Catalog\Thumbs\ImagePath=boatpaper.png.png" />
@@ -201,7 +202,7 @@
     <Content Include="Catalog\Thumbs\ImagePath=planeglider.png.png" />
     <Content Include="Catalog\Thumbs\ImagePath=planepaper.png.png" />
     <Content Include="Catalog\Thumbs\ImagePath=planeprop.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=rocket.png.png" />
+    <Content Include="Catalog\Thumbs\rocket.png" />
     <Content Include="Catalog\Thumbs\ImagePath=truckbig.png.png" />
     <Content Include="Catalog\Thumbs\ImagePath=truckearly.png.png" />
     <Content Include="Catalog\Thumbs\ImagePath=truckfire.png.png" />
@@ -257,6 +258,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -369,6 +371,13 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -397,6 +406,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\ShoppingCartActions.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.CS" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Product.CS" />
@@ -417,6 +428,13 @@
       <DependentUpon>ProductList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
