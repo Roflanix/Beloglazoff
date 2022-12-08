@@ -168,44 +168,42 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
-    <Content Include="Catalog\Busdouble.png" />
-    <Content Include="Catalog\Busgreen.png" />
-    <Content Include="Catalog\busred.png.png" />
-    <Content Include="Catalog\ImagePath=boatbig.png.png" />
-    <Content Include="Catalog\ImagePath=boatpaper.png.png" />
-    <Content Include="Catalog\ImagePath=boatsail.png.png" />
-    <Content Include="Catalog\ImagePath=carconvert.png.png" />
-    <Content Include="Catalog\ImagePath=carearly.png.png" />
-    <Content Include="Catalog\ImagePath=carfast.png.png" />
-    <Content Include="Catalog\ImagePath=carfaster.png.png" />
-    <Content Include="Catalog\ImagePath=carracer.png.png" />
-    <Content Include="Catalog\ImagePath=planeace.png.png" />
-    <Content Include="Catalog\ImagePath=planeglider.png.png" />
-    <Content Include="Catalog\ImagePath=planepaper.png.png" />
-    <Content Include="Catalog\ImagePath=planeprop.png.png" />
-    <Content Include="Catalog\rocket.png" />
-    <Content Include="Catalog\ImagePath=truckbig.png.png" />
-    <Content Include="Catalog\ImagePath=truckearly.png.png" />
-    <Content Include="Catalog\ImagePath=truckfire.png.png" />
+    <Content Include="Catalog\ImagePath=%27Busdouble.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27Busgreen.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27busred.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27boatbig.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27boatsail.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27carconvert.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27carearly.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27carfast.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27carfaster.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27carracer.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27planeace.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27planeglider.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27planepaper.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27planeprop.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27rocket.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27truckbig.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27truckearly.png%27.png" />
+    <Content Include="Catalog\ImagePath=%27truckfire.png%27.png" />
     <Content Include="Catalog\Thumbs\Busdouble.png" />
     <Content Include="Catalog\Thumbs\Busgreen.png" />
-    <Content Include="Catalog\Thumbs\busred.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=boatbig.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=boatpaper.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=boatsail.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=carconvert.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=carearly.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=carfast.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=carfaster.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=carracer.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=planeace.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=planeglider.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=planepaper.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=planeprop.png.png" />
+    <Content Include="Catalog\Thumbs\busred.png" />
+    <Content Include="Catalog\Thumbs\boatbig.png" />
+    <Content Include="Catalog\Thumbs\boatsail.png" />
+    <Content Include="Catalog\Thumbs\carconvert.png" />
+    <Content Include="Catalog\Thumbs\carearly.png" />
+    <Content Include="Catalog\Thumbs\carfast.png" />
+    <Content Include="Catalog\Thumbs\carfaster.png" />
+    <Content Include="Catalog\Thumbs\carracer.png" />
+    <Content Include="Catalog\Thumbs\planeace.png" />
+    <Content Include="Catalog\Thumbs\planeglider.png" />
+    <Content Include="Catalog\Thumbs\planepaper.png" />
+    <Content Include="Catalog\Thumbs\planeprop.png" />
     <Content Include="Catalog\Thumbs\rocket.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=truckbig.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=truckearly.png.png" />
-    <Content Include="Catalog\Thumbs\ImagePath=truckfire.png.png" />
+    <Content Include="Catalog\Thumbs\truckbig.png" />
+    <Content Include="Catalog\Thumbs\truckearly.png" />
+    <Content Include="Catalog\Thumbs\truckfire.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -460,6 +458,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Catalog\Images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
