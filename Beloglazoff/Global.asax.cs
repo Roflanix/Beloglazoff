@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using Beloglazoff.Models;
+using Beloglazoff.Logic;
 
 namespace Beloglazoff
 {
@@ -21,6 +22,10 @@ namespace Beloglazoff
 
             // Initialize the product database.
             Database.SetInitializer(new ProductDatabaseInitializer());
+
+            // Создайте пользовательскую роль и пользователя.
+            RoleActions roleActions = new RoleActions();
+            roleActions.AddUserAndRole();
         }
     }
 }
